@@ -1,0 +1,144 @@
+#main-footer {
+  position: absolute;
+  bottom: -45%;
+  .rental {
+    position: absolute;
+    width: 280px;
+    height: 48px;
+    left: 120px;
+    // top: 254px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 154px;
+    height: 82px;
+    left: 555px;
+    // top: 284px;
+    li {
+      margin-bottom: 12px;
+    }
+  }
+  .portion_num {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 188px;
+    height: 82px;
+    left: 755px;
+    li {
+      margin-bottom: 12px;
+    }
+  }
+  .portion_str {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 0px;
+    gap: 22px;
+    position: absolute;
+    width: 205px;
+    height: 82px;
+    left: 999px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    h3 {
+      width: 195px;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    i {
+      margin-left: 1em;
+    }
+    .cound {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      text-align: center;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      &:hover {
+        background-color: #f00;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+      }
+    }
+    .cound_1 {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      text-align: center;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: aqua;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+      }
+    }
+    .cound_2 {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      text-align: center;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: blue;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+      }
+    }
+    .cound_3 {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      text-align: center;
+      border-radius: 50%;
+      &:hover {
+        background-color: lime;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+      }
+    }
+    span {
+      i {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.arrow_up {
+  width: 40px;
+  height: 40px;
+  background-color: lime;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 35%;
+}

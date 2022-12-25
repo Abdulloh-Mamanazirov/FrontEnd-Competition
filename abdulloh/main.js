@@ -3,6 +3,11 @@ let form = document.querySelector('form')
 let loginBox = document.querySelector(".loginbox");
 let loginBtn = document.querySelector('.loginBtn')
 let exitLogin = document.querySelector('.x')
+let loginAside = document.querySelector('.loginAside')
+let modeAside = document.querySelector('.modeAside')
+
+let sidebar = document.querySelector(".sidebar-icon");
+let xbtn = document.querySelector(".xbtn");
 
 let compactBtn = document.querySelector('.compactBtn') 
 let sportBtn = document.querySelector('.sportBtn') 
@@ -65,11 +70,18 @@ form.addEventListener('submit', (e)=>{
 
 
 loginBtn.addEventListener('click', ()=>{
+    document.querySelector(".greyCover").classList.add("cover");
     loginBox.classList.remove('none')
 })
 exitLogin.addEventListener('click', ()=>{
+    document.querySelector(".greyCover").classList.remove("cover");
     loginBox.classList.add('none')
 })
+loginAside.addEventListener('click', ()=>{
+    document.querySelector(".greyCover").classList.add("cover");
+    loginBox.classList.remove('none')
+})
+
 
 compactBtn.addEventListener('click', ()=>{
     compactBtn.style.backgroundColor = "#299764";
@@ -128,4 +140,13 @@ allBtn.addEventListener('click', ()=>{
     compactCars.style.display = "flex";
     sportCars.style.display = "flex";
     vanCars.style.display = "flex";
+})
+
+sidebar.addEventListener('click', ()=>{
+    document.querySelector(".greyCover").classList.add('cover');
+    document.querySelector('aside').style.right = '0'
+})
+xbtn.addEventListener('click', ()=>{
+    document.querySelector(".greyCover").classList.remove("cover");
+    document.querySelector('aside').style.right = '-100%'
 })

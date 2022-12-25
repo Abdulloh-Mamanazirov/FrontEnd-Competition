@@ -6,6 +6,17 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: #F5F5F5;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -40,11 +51,209 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.items {
+  margin-top: 20px;
+}
+
+.repository {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  border-radius: 40px;
+}
+
+.repository .box1 {
+  padding: 70px;
+}
+
+.repository .box1 .from-google {
+  color: #4285f4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.repository .box1 .from-google .google-icon {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.repository .box1 .info-comunity {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+  width: 320px;
+  margin-top: 16px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(90deg, #ea4335 19.83%, #fbbc05 65%, #34a853 82.29%, #4285f4 100%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(19.83%, #ea4335), color-stop(65%, #fbbc05), color-stop(82.29%, #34a853), to(#4285f4)) 1;
+     border-image: linear-gradient(90deg, #ea4335 19.83%, #fbbc05 65%, #34a853 82.29%, #4285f4 100%) 1;
+}
+
+.repository .box1 .instagram-info {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #555555;
+}
+
+.repository .box1 .info-link {
+  display: block;
+  color: #ee2a7b;
+  font-size: 18px;
+  border: 1px solid;
+  width: 200px;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  border-radius: 100px;
+  margin-top: 16px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.repository .box1 .info-link:hover {
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #f9ed32 0%, #ee2a7b 36%, #d22a8a 44%, #8b2ab2 60%, #1b2af0 83%, #002aff 88%);
+  color: white;
+}
+
+.repository .box2 {
+  background: #299764;
+  gap: 30px;
+  padding: 20px 20px 0px 20px;
+  border-radius: 0px 40px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.repository .box2 .icon-star {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #299764;
+  width: 10px;
+}
+
+.box3 {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  height: 360px;
+  width: 120px;
+}
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.for-brands {
+  margin-top: 50px;
+}
+
+.for-brands .title-brands {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 34px;
+  display: block;
+}
+
+.for-brands .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.for-brands .catalog-title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.for-brands .discription {
+  font-weight: 400;
+  font-size: 16px;
+  width: 684px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.for-brands .items {
+  background: #f5f5f5;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 560px;
+  padding: 40px 44px 30px 32px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.for-brands .items:hover {
+  background: #299764;
+}
+
+.for-brands .items:hover .icon-tv {
+  color: white;
+}
+
+.for-brands .items .icon-tv {
+  font-size: 50px;
+  color: #299764;
+}
+
+.for-brands .items .title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+  width: 211px;
+}
+
+.for-brands .items .items-discription {
+  width: 354px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+}
+
+.catalog-bg {
+  margin-top: 130px;
+  background: #ffffffff;
+  padding-top: 130px;
+}
+
 :root {
   --color: #299764;
 }
 
-.btn, a {
+.btn,
+a {
   cursor: pointer;
 }
 
@@ -52,10 +261,17 @@ body {
   display: none;
 }
 
+.cover {
+  z-index: 99999;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.512);
+}
+
 .loginbox {
   text-align: center;
   padding: 40px 32px;
-  z-index: 99999;
+  z-index: 999999;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -109,15 +325,15 @@ body {
   font-size: 18px;
   font-weight: 500;
   width: 100%;
-  border: 1.5px solid #E5E7EA;
+  border: 1.5px solid #e5e7ea;
   border-radius: 80px;
 }
 
 .loginbox form::before {
-  content: 'Forget password ?';
+  content: "Forget password ?";
   position: absolute;
   bottom: 165px;
-  opacity: .8;
+  opacity: 0.8;
   cursor: pointer;
   right: 40px;
 }
@@ -153,6 +369,10 @@ nav .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav .navbar .sidebar-icon {
+  display: none;
 }
 
 nav .navbar .navleft {
@@ -201,12 +421,94 @@ nav .navbar .navright .loginBtn {
   gap: 10px;
 }
 
+.resimg {
+  display: none;
+}
+
+aside {
+  z-index: 99999;
+  width: 355px;
+  height: 100%;
+  padding: 30px;
+  padding-top: 10px;
+  background-color: #fff;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+aside .sidebarBottom .navright {
+  position: absolute;
+  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+aside .sidebarBottom .navright .loginBtn {
+  width: 90px;
+  border-radius: 100px;
+  background-color: #299764;
+  color: #fff;
+}
+
+aside .btn {
+  background-color: #eee;
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  cursor: pointer;
+}
+
+aside .sidebarAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+aside h4 {
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+aside p {
+  font-size: 20px;
+  line-height: 1.3;
+  color: #555;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 header .carousel .carouselImg {
   border-radius: 20px;
 }
 
 header .carousel .carouselImg img {
   border-radius: 20px;
+  width: 100%;
 }
 
 header .searchBar form {
@@ -286,8 +588,8 @@ section.cars .carBtns button {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 16px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 section.cars .carBtns button:hover {
@@ -305,7 +607,9 @@ section.cars .carBtns .vanBtn {
   color: #000;
 }
 
-section.cars .carCards, section.cars .sportscarCards, section.cars .vanccarCards {
+section.cars .carCards,
+section.cars .sportscarCards,
+section.cars .vanccarCards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -318,7 +622,9 @@ section.cars .carCards, section.cars .sportscarCards, section.cars .vanccarCards
   margin-bottom: 15px;
 }
 
-section.cars .carCards .carCard, section.cars .sportscarCards .carCard, section.cars .vanccarCards .carCard {
+section.cars .carCards .carCard,
+section.cars .sportscarCards .carCard,
+section.cars .vanccarCards .carCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,20 +642,26 @@ section.cars .carCards .carCard, section.cars .sportscarCards .carCard, section.
   padding: 30px 24px;
 }
 
-section.cars .carCards .carCard .carName, section.cars .sportscarCards .carCard .carName, section.cars .vanccarCards .carCard .carName {
+section.cars .carCards .carCard .carName,
+section.cars .sportscarCards .carCard .carName,
+section.cars .vanccarCards .carCard .carName {
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
 }
 
-section.cars .carCards .carCard .carCategory, section.cars .sportscarCards .carCard .carCategory, section.cars .vanccarCards .carCard .carCategory {
+section.cars .carCards .carCard .carCategory,
+section.cars .sportscarCards .carCard .carCategory,
+section.cars .vanccarCards .carCard .carCategory {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   color: #555;
 }
 
-section.cars .carCards .carCard .carData, section.cars .sportscarCards .carCard .carData, section.cars .vanccarCards .carCard .carData {
+section.cars .carCards .carCard .carData,
+section.cars .sportscarCards .carCard .carData,
+section.cars .vanccarCards .carCard .carData {
   display: -ms-grid;
   display: grid;
   row-gap: 20px;
@@ -359,7 +671,9 @@ section.cars .carCards .carCard .carData, section.cars .sportscarCards .carCard 
       grid-template-rows: repeat(2, 1fr);
 }
 
-section.cars .carCards .carCard .carData .carInfo, section.cars .sportscarCards .carCard .carData .carInfo, section.cars .vanccarCards .carCard .carData .carInfo {
+section.cars .carCards .carCard .carData .carInfo,
+section.cars .sportscarCards .carCard .carData .carInfo,
+section.cars .vanccarCards .carCard .carData .carInfo {
   font-size: 16px;
   font-weight: 500;
   line-height: 20;
@@ -378,8 +692,8 @@ section.cars .viewbtn .viewall {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 16px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 section.cars .viewbtn .viewall:hover {
@@ -393,6 +707,222 @@ section.cars .sportscarCards {
 
 section.cars .vanccarCards {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+  .loginBox {
+    max-width: 700px;
+  }
+  .resimg {
+    display: block;
+  }
+  nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 30px;
+  }
+  nav .navbar .sidebar-icon {
+    display: block;
+  }
+  nav .navbar .navleft {
+    display: none;
+  }
+  nav .navbar .navright {
+    display: none;
+  }
+  .fa-bars {
+    font-size: 25px;
+  }
+  section.cars .carCards,
+  section.cars .sportscarCards,
+  section.cars .vanccarCards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  section.cars .carCards .carCard,
+  section.cars .sportscarCards .carCard,
+  section.cars .vanccarCards .carCard {
+    max-width: 350px;
+  }
+  .repository {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .repository .box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .repository .box1 .info-comunity {
+    font-size: 25px;
+    line-height: 35px;
+    border-right: 2px solid;
+    border-bottom: none;
+  }
+  .for-brands .brands {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+  }
+  .for-brands .items {
+    width: 387px;
+  }
+  .for-brands .title {
+    width: unset;
+  }
+  .for-brands .items-discription {
+    width: unset;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+  body {
+    padding: 0 10px;
+  }
+  header .searchBar form {
+    width: 350px;
+  }
+  header .searchBar form input {
+    width: 350px;
+  }
+  section.cars .carCards,
+  section.cars .sportscarCards,
+  section.cars .vanccarCards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  section.cars .carCards .carCard,
+  section.cars .sportscarCards .carCard,
+  section.cars .vanccarCards .carCard {
+    max-width: 350px;
+  }
+  section.items {
+    display: none;
+  }
+}
+
+@media (max-width: 1324px) {
+  .items {
+    width: 500px !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1324px) {
+  .catalog {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1208px) {
+  .catalog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .items {
+    width: 70% !important;
+    gap: 1px !important;
+  }
+  .catalog-title {
+    text-align: center;
+  }
+  .discription {
+    max-width: 70% !important;
+  }
+  .flex1 {
+    position: relative;
+    z-index: 1;
+  }
+  .internal-item {
+    position: absolute !important;
+    right: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 20px !important;
+    width: 160px !important;
+  }
+  .items-discription {
+    width: 200px !important;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 15px !important;
+    width: 130px !important;
+  }
+  .icon-tv {
+    font-size: 30px !important;
+  }
+  .items-discription {
+    width: 200px !important;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 336px) {
+  .title {
+    font-size: 15px !important;
+    width: 130px !important;
+  }
+  .icon-tv {
+    font-size: 30px !important;
+  }
+  .items-discription {
+    width: 150px !important;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 314px) {
+  .title {
+    font-size: 15px !important;
+    width: 130px !important;
+  }
+  .icon-tv {
+    display: none;
+  }
+  .items-discription {
+    width: 150px !important;
+    font-size: 10px;
+  }
 }
 
 .bg-dark {

@@ -1,80 +1,91 @@
 :root {
   --color: #299764;
 }
+.btn,
+a {
+  cursor: pointer;
+}
+.none {
+  display: none;
+}
+.cover {
+  z-index: 99999;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.512);
+}
 
-.btn , a{
-    cursor: pointer;
+.aboutMenu{
+  
 }
-.none{
-    display: none;
-}
-.loginbox{
-    // position: relative;
-    text-align: center;
-    padding: 40px 32px;
-    z-index: 99999;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 590px;
-    height: 480px;
-    background-color: #fff;
-    box-shadow: 0 0 15px grey;
-    border-radius: 20px;
-    h2{
-        font-size: 36px;
-        font-weight: 600;
+
+.loginbox {
+  // position: relative;
+  text-align: center;
+  padding: 40px 32px;
+  z-index: 999999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 590px;
+  height: 480px;
+  background-color: #fff;
+  box-shadow: 0 0 15px grey;
+  border-radius: 20px;
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .logp1 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 15px 0 32px;
+  }
+  .x {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    background-color: #eee;
+    border: none;
+    width: 60px;
+    font-size: 18px;
+    height: 60px;
+    padding: 18px;
+    border-radius: 50%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 18px;
+      padding: 18px 30px;
+      font-size: 18px;
+      font-weight: 500;
+      width: 100%;
+      border: 1.5px solid #e5e7ea;
+      border-radius: 80px;
     }
-    .logp1{
-        font-weight: 400;
-        font-size: 16px;
-        margin: 15px 0 32px;
+    &::before {
+      content: "Forget password ?";
+      position: absolute;
+      bottom: 165px;
+      opacity: 0.8;
+      cursor: pointer;
+      right: 40px;
     }
-    .x{
-        position: absolute;
-        top: 25px;
-        right: 30px;
-        background-color:#eee;
-        border: none;
-        width: 60px;
-        font-size: 18px;
-        height: 60px;
-        padding: 18px;
-        border-radius: 50%;
+    p {
+      cursor: pointer;
+      margin: 30px 0 32px;
     }
-    form{
-        display: flex;
-        flex-direction: column;
-        input{
-            margin-bottom: 18px;
-            padding: 18px 30px;
-            font-size: 18px;
-            font-weight: 500;
-            width: 100%;
-            border: 1.5px solid #E5E7EA;
-            border-radius: 80px;
-        }
-        &::before{
-            content: 'Forget password ?';
-            position: absolute;
-            bottom: 165px;
-            opacity: .8;
-            cursor: pointer;
-            right: 40px;
-        }
-        p{
-            cursor: pointer;
-            margin: 30px 0 32px;
-        }
-        button{
-            background-color: var(--color);
-            color: #fff;
-            border-radius: 100px;
-            border:none;
-            font-size: 18px;
-        }
+    button {
+      background-color: var(--color);
+      color: #fff;
+      border-radius: 100px;
+      border: none;
+      font-size: 18px;
     }
+  }
 }
 
 nav {
@@ -88,7 +99,9 @@ nav {
   .navbar {
     justify-content: space-between;
     align-items: center;
-
+    .sidebar-icon{
+      display: none;
+    }
     .navleft {
       align-items: center;
       gap: 36px;
@@ -116,11 +129,69 @@ nav {
         padding-right: 25px;
         border-radius: 100px;
         display: flex;
-        border:1.5px solid #555;
+        border: 1.5px solid #555;
         align-items: center;
         gap: 10px;
       }
     }
+  }
+}
+.resimg {
+  display: none;
+}
+aside {
+  z-index: 99999;
+  width: 355px;
+  height: 100%;
+  padding: 30px;
+  padding-top: 10px;
+  background-color: #fff;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .sidebarBottom .navright {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .loginBtn {
+      width: 90px;
+      border-radius: 100px;
+      background-color: #299764;
+      color: #fff;
+    }
+  }
+  .btn {
+    background-color: #eee;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    cursor: pointer;
+  }
+  .sidebarAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  h4 {
+    font-size: 24px;
+    cursor: pointer;
+
+    font-weight: 500;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
   }
 }
 
@@ -130,6 +201,7 @@ header {
       border-radius: 20px;
       img {
         border-radius: 20px;
+        width: 100%;
       }
     }
   }
@@ -164,7 +236,7 @@ header {
 
 section.cars {
   margin-top: 100px;
-  
+
   .carsHeading {
     text-align: center;
     h2 {
@@ -196,23 +268,25 @@ section.cars {
       padding-left: 25px;
       padding-right: 25px;
       font-size: 16px;
-        transition: all .3s;
+      transition: all 0.3s;
 
-      &:hover{
+      &:hover {
         background-color: var(--color);
         color: #fff;
       }
     }
-    .sportBtn{
-        background-color: transparent;
-        color: #000;
+    .sportBtn {
+      background-color: transparent;
+      color: #000;
     }
-    .vanBtn{
-        background-color: transparent;
-        color: #000;
+    .vanBtn {
+      background-color: transparent;
+      color: #000;
     }
   }
-  .carCards, .sportscarCards , .vanccarCards {
+  .carCards,
+  .sportscarCards,
+  .vanccarCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -263,19 +337,243 @@ section.cars {
       padding-left: 25px;
       padding-right: 25px;
       font-size: 16px;
-         transition: all .3s;
+      transition: all 0.3s;
 
-      &:hover{
+      &:hover {
         background-color: var(--color);
         color: #fff;
       }
     }
   }
-  .sportscarCards{
+  .sportscarCards {
     display: none;
   }
-  .vanccarCards{
+  .vanccarCards {
     display: none;
   }
 }
 
+@media (max-width: 900px) {
+  .container {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+  .loginBox{
+    max-width: 700px;
+  }
+  .resimg {
+    display: block;
+  }
+  nav {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      .sidebar-icon{
+        display: block;
+      }
+      .navleft {
+        display: none;
+      }
+      .navright {
+        display: none;
+      }
+    }
+  }
+  .fa-bars {
+    font-size: 25px;
+  }
+  section.cars {
+    .carCards,
+    .sportscarCards,
+    .vanccarCards {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      .carCard {
+        max-width: 350px;
+      }
+    }
+  }
+  .repository {
+    flex-direction: column;
+    .box1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .info-comunity {
+        font-size: 25px;
+        line-height: 35px;
+        border-right: 2px solid;
+        border-bottom: none;
+      }
+    }
+  }
+  .for-brands {
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+      justify-items: center;
+    }
+    .items {
+      width: 387px;
+    }
+    .title {
+      width: unset;
+    }
+    .items-discription {
+      width: unset;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+  body {
+    padding: 0 10px;
+  }
+  header {
+    .searchBar {
+      form {
+        width: 350px;
+        input {
+          width: 350px;
+        }
+      }
+    }
+  }
+  section.cars {
+    .carCards,
+    .sportscarCards,
+    .vanccarCards {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      .carCard {
+        max-width: 350px;
+      }
+    }
+  }
+  section.items{
+    display: none;
+  }
+}
+
+@media (max-width: 1324px) {
+    .items {
+        width: 500px !important;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1324px) {
+     .catalog {
+        justify-content: space-evenly;
+     }
+
+    // .items {
+    //     width: 500px !important;
+    //     margin: auto;
+    //     margin-bottom: 20px;
+    // }
+}
+
+@media (max-width: 1208px) {
+     .catalog {
+        flex-direction: column;
+     }
+
+     .items {
+         width: 70% !important;
+         gap: 1px !important;
+     }
+
+     .catalog-title {
+       text-align: center;
+     }
+
+     .discription {
+        max-width: 70%!important;
+     }
+
+     .flex1 {
+        position: relative;
+        z-index: 1;
+     }
+
+     .internal-item {
+        position: absolute !important;
+        right: 20%;
+     }
+
+    // .items {
+    //     width: 500px !important;
+    //     margin: auto;
+    //     margin-bottom: 20px;
+    // }
+}
+
+@media (max-width: 600px) { 
+     .title {
+        font-size: 20px !important;
+        width: 160px !important;
+     }
+
+    .items-discription {
+        width: 200px !important;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) { 
+     .title {
+        font-size: 15px !important;
+        width: 130px !important;
+     }
+
+     .icon-tv {
+font-size: 30px !important;
+     }
+
+    .items-discription {
+        width: 200px !important;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 336px) { 
+     .title {
+        font-size: 15px !important;
+        width: 130px !important;
+     }
+
+     .icon-tv {
+font-size: 30px !important;
+     }
+
+    .items-discription {
+        width: 150px !important;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 314px) { 
+     .title {
+        font-size: 15px !important;
+        width: 130px !important;
+     }
+
+     .icon-tv {
+      display: none;
+     }
+
+    .items-discription {
+        width: 150px !important;
+        font-size: 10px;
+    }
+}

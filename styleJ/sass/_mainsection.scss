@@ -1,0 +1,119 @@
+.underline:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.section-main{
+.container{
+  .portion {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+position: absolute;
+width: 240px;
+height: 160px;
+left: 120px;
+bottom: -150px;
+  }
+}
+.portion1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 93px;
+height: 82px;
+left: -280px;
+top: 64px;
+}
+.portion2 {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 88px;
+height: 111px;
+left: -99px;
+top: 64px;
+}
+.portion3 {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 79px;
+height: 140px;
+left: 95px;
+top: 64px;
+}
+.portion4 {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 204px;
+height: 111px;
+left: 285px;
+top: 64px;
+}
+}
+.card_cards {
+  position: absolute;
+width: 814px;
+height: 140px;
+left: 425px;
+top: 64px;
+.navigator {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 93px;
+height: 82px;
+left: 425px;
+top: 604px;
+}
+}
+.boto_m {
+    width: 895px;
+    height: 0px;
+    background-color: #000;
+    position: absolute;
+    bottom: -35%;
+    left: 17%;
+    border: 1.5px solid #E5E7EA;
+}
+
+.top {
+    width: 1327px;
+    height: 1.1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 4%;
+    border-top: 1.5px solid #E5E7EA;
+    // left: 17%;
+}
+.footer_text-box {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+position: absolute;
+width: 240px;
+height: 160px;
+left: 120px;
+top: 40px;
+}
