@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -12,6 +13,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+.btn {
+  padding: 18px;
 }
 
 .container {
@@ -33,5 +38,365 @@ ul {
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --color: #299764;
+}
+
+.btn, a {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.loginbox {
+  text-align: center;
+  padding: 40px 32px;
+  z-index: 99999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 590px;
+  height: 480px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px grey;
+          box-shadow: 0 0 15px grey;
+  border-radius: 20px;
+}
+
+.loginbox h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.loginbox .logp1 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 15px 0 32px;
+}
+
+.loginbox .x {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background-color: #eee;
+  border: none;
+  width: 60px;
+  font-size: 18px;
+  height: 60px;
+  padding: 18px;
+  border-radius: 50%;
+}
+
+.loginbox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginbox form input {
+  margin-bottom: 18px;
+  padding: 18px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  border: 1.5px solid #E5E7EA;
+  border-radius: 80px;
+}
+
+.loginbox form::before {
+  content: 'Forget password ?';
+  position: absolute;
+  bottom: 165px;
+  opacity: .8;
+  cursor: pointer;
+  right: 40px;
+}
+
+.loginbox form p {
+  cursor: pointer;
+  margin: 30px 0 32px;
+}
+
+.loginbox form button {
+  background-color: var(--color);
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+}
+
+nav {
+  z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+
+nav .navbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar .navleft {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 36px;
+}
+
+nav .navbar .navleft ul {
+  gap: 27px;
+}
+
+nav .navbar .navright {
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+nav .navbar .navright .telnum {
+  font-weight: 600;
+}
+
+nav .navbar .navright .mode {
+  background-color: #eee;
+  border-radius: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav .navbar .navright .loginBtn {
+  background-color: var(--color);
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1.5px solid #555;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+header .carousel .carouselImg {
+  border-radius: 20px;
+}
+
+header .carousel .carouselImg img {
+  border-radius: 20px;
+}
+
+header .searchBar form {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: -33px;
+}
+
+header .searchBar form input {
+  font-size: 18px;
+  width: 600px;
+  padding: 22px 30px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+}
+
+header .searchBar form input:active {
+  border: none;
+}
+
+header .searchBar form i {
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section.cars {
+  margin-top: 100px;
+}
+
+section.cars .carsHeading {
+  text-align: center;
+}
+
+section.cars .carsHeading h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+
+section.cars .carsHeading p {
+  margin-top: 10px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+}
+
+section.cars .carBtns {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+
+section.cars .carBtns button {
+  background-color: var(--color);
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section.cars .carBtns button:hover {
+  background-color: var(--color);
+  color: #fff;
+}
+
+section.cars .carBtns .sportBtn {
+  background-color: transparent;
+  color: #000;
+}
+
+section.cars .carBtns .vanBtn {
+  background-color: transparent;
+  color: #000;
+}
+
+section.cars .carCards, section.cars .sportscarCards, section.cars .vanccarCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+section.cars .carCards .carCard, section.cars .sportscarCards .carCard, section.cars .vanccarCards .carCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 387px;
+  height: 433px;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 30px 24px;
+}
+
+section.cars .carCards .carCard .carName, section.cars .sportscarCards .carCard .carName, section.cars .vanccarCards .carCard .carName {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+section.cars .carCards .carCard .carCategory, section.cars .sportscarCards .carCard .carCategory, section.cars .vanccarCards .carCard .carCategory {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #555;
+}
+
+section.cars .carCards .carCard .carData, section.cars .sportscarCards .carCard .carData, section.cars .vanccarCards .carCard .carData {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+section.cars .carCards .carCard .carData .carInfo, section.cars .sportscarCards .carCard .carData .carInfo, section.cars .vanccarCards .carCard .carData .carInfo {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20;
+}
+
+section.cars .viewbtn {
+  text-align: center;
+  margin: 40px 0 150px;
+}
+
+section.cars .viewbtn .viewall {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #555;
+  border-radius: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section.cars .viewbtn .viewall:hover {
+  background-color: var(--color);
+  color: #fff;
+}
+
+section.cars .sportscarCards {
+  display: none;
+}
+
+section.cars .vanccarCards {
+  display: none;
+}
+
+.bg-dark {
+  background-color: #1C1C1C;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

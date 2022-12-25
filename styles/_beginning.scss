@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -10,7 +11,9 @@ a{
 ul{
     list-style: none;
 }
-
+.btn{
+    padding: 18px;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
