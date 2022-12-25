@@ -1,29 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+body {
+    background: #F5F5F5;
+}
+
+img {
+    user-select: none;
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.portion{
+.portion {
     flex: 1;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }

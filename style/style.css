@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.portion {
+  flex: 1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.items {
+  margin-top: 20px;
+}
+
+.repository {
+  justify-content: space-between;
+  background: white;
+  border-radius: 40px;
+}
+.repository .box1 {
+  padding: 70px;
+}
+.repository .box1 .from-google {
+  color: #4285F4;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.repository .box1 .from-google .google-icon {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.repository .box1 .info-comunity {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+  width: 320px;
+  margin-top: 16px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%) 1;
+     border-image: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%) 1;
+}
+.repository .box1 .instagram-info {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #555555;
+}
+.repository .box1 .info-link {
+  display: block;
+  color: #EE2A7B;
+  font-size: 18px;
+  border: 1px solid;
+  width: 200px;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  border-radius: 100px;
+  margin-top: 16px;
+  transition: 0.5s ease;
+}
+.repository .box1 .info-link:hover {
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  color: white;
+}
+.repository .box2 {
+  background: #299764;
+  gap: 30px;
+  padding: 20px 270px 0px 20px;
+  border-radius: 0px 40px 40px 0px;
+  display: flex;
+  overflow: hidden;
+}
+.repository .box2 .icon-star {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #299764;
+  width: 10px;
+}
+
+.box3 {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  height: 360px;
+  width: 400px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.for-brands {
+  margin-top: 50px;
+}
+.for-brands .title-brands {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 34px;
+  display: block;
+}
+.for-brands .brands {
+  display: flex;
+  justify-content: space-between;
+}
+.for-brands .catalog-title {
+  text-align: center;
+  margin-top: 80px;
+}
+.for-brands .discription {
+  font-weight: 400;
+  font-size: 16px;
+  width: 684px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+.for-brands .items {
+  background: #F5F5F5;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 560px;
+  padding: 40px 44px 30px 32px;
+  transition: 0.5s ease;
+}
+.for-brands .items:hover {
+  background: #299764;
+}
+.for-brands .items:hover .icon-tv {
+  color: white;
+}
+.for-brands .items .icon-tv {
+  font-size: 50px;
+  color: #299764;
+}
+.for-brands .items .title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+  width: 211px;
+}
+.for-brands .items .items-discription {
+  width: 354px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+}
+
+.catalog-bg {
+  margin-top: 130px;
+  background: white;
+  padding-top: 130px;
+}/*# sourceMappingURL=style.css.map */
